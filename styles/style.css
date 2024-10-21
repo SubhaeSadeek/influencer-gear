@@ -117,6 +117,19 @@ ul a {
 	background-repeat: no-repeat;
 }
 
+/* company logoes section */
+
+.user-profile-logo div {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	justify-content: space-around;
+	align-items: center;
+	height: 7rem;
+	border-top: 1px solid rgb(216, 210, 210);
+	border-bottom: 1px solid rgb(223, 215, 215);
+	margin-bottom: 60px;
+}
+
 /* ------------------------------------ */
 /*      responsive for Mobile device    */
 /* ------------------------------------ */
@@ -142,10 +155,8 @@ ul a {
 	#hamburger-manu {
 		display: contents;
 	}
-
-	/* --------------------------------- */
 	/*      hero section for Mobile      */
-	/* --------------------------------- */
+
 	.section-hero {
 		margin-top: 0.25rem;
 	}
@@ -173,5 +184,10 @@ ul a {
 	}
 	.hero-image img {
 		width: 100%;
+	}
+
+	.user-profile-logo div {
+		grid-template-columns: repeat(4, 1fr);
+		justify-content: center;
 	}
 }
